@@ -19,3 +19,32 @@ https://play.tailwindcss.com/ZszfXsLfJR
 
 - footer
   https://play.tailwindcss.com/hEQzUHX2IG
+
+
+
+
+-navbar
+import React from 'react'
+
+const Navbar = () => {
+    return (
+        <nav className='flex items-center justfify-between md:justify-center mt-2'>
+            <ul className='flex items-center justify-center font-semibold'>
+                <li className='relative group px-3 py-2'>
+                    <a href='#' className='hover:opacity-50 cursor-pointer'>Home</a>
+                </li>
+                <li className='relative group px-3 py-2'>
+                    <a href='#' className='hover:opacity-50 cursor-pointer'>Products</a>
+                </li>
+                <li className='relative group px-3 py-2'>
+                    <a href='#' className='hover:opacity-50 cursor-pointer'>Guides</a>
+                </li>
+                <li className='relative group px-3 py-2'>
+                    <a href='#' className='hover:opacity-50 cursor-pointer'>Complete Builds</a>
+                </li>
+            </ul>
+        </nav>
+    )
+}
+
+export default Navbar
